@@ -6,26 +6,9 @@ import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <div className='footer-container'>
-      <section className='footer-subscription'>
-        <p className='footer-subscription-heading'>
-          Register here to receive notifications for new arrivals
-        </p>
-        <p className='footer-subscription-text'>
-          You can opt out any time.
-        </p>
-        <div className='input-areas'>
-          <form>
-            <input
-              className='footer-input'
-              name='email'
-              type='email'
-              placeholder='Your Email'
-            />
-            <Button buttonStyle='btn--outline'>Register</Button>
-          </form>
-        </div>
-      </section>
-      <div class='footer-links'>
+      
+      <section className="inserted">
+        <div class='footer-links'>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>About Us</h2>
@@ -61,7 +44,6 @@ function Footer() {
             FALLS
             </Link>
           </div>
-          <small class='website-rights'>Copyright Falls@2025</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
@@ -106,6 +88,27 @@ function Footer() {
           </div>
         </div>
       </section>
+      </section>
+      <section className='footer-subscription'>
+        <p className='footer-subscription-heading'>
+          Register here to receive notifications for new arrivals
+        </p>
+        <p className='footer-subscription-text'>
+          You can opt out any time.
+        </p>
+        <div className='input-areas'>
+          <form>
+            <input
+              className='footer-input'
+              name='email'
+              type='email'
+              placeholder='Your Email'
+            />
+            <Button buttonStyle='btn--outline'>Register</Button>
+          </form>
+        </div>
+      </section>
+      
     </div>
   );
 }

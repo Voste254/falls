@@ -3,8 +3,9 @@ import '../../App.css';
 
 const Navbar = () => {
   return (
-    <div className='navbar'>
-      <div className="logo">FOLLS</div>
+    <div className='t-navbar'>
+      
+      <div className="logo"> <i class='fas fa-shopping-cart' />FOLLS</div>
 
       <div className="search">
         <input type="text" placeholder="Search......." />

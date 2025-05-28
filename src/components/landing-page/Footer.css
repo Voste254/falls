@@ -2,9 +2,16 @@
   background-color: #242424;
   padding: 4rem 0 2rem 0;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.inserted{
+   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .footer-subscription {
@@ -93,7 +100,7 @@
   color: #b1b1b1;
 }
 
-/* Social Icons */
+
 .social-icon-link {
   color: #fff;
   font-size: 24px;

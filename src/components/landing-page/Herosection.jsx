@@ -12,6 +12,7 @@ function HeroSection() {
       <div className='hero-btns'>
         <Button
           className='btns'
+          type='login'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
@@ -20,6 +21,7 @@ function HeroSection() {
         <Button
           className='btns'
           buttonStyle='btn--primary'
+          type='login'
           buttonSize='btn--large'
           onClick={console.log('yoo')}
         >
