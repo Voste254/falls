@@ -8,6 +8,7 @@ import Footer from './components/landing-page/Footer';
 import Services from './components/landing-page/Services';
 import { Route, Routes } from 'react-router-dom';
 import Login from './components/landing-page/Login';
+import Signup from './components/landing-page/Signup';
 
 function Dashboard(){
   return(
@@ -30,8 +31,10 @@ function Landingpage(){
       </>} >
                     
       </Route>
-      <Route exact path='/login' element={<Login/>} />
+      <Route path='/login' element={<Login/>} />
       <Route  path='/dashboard' element={<Dashboard/>} />
+      <Route path='/signup' element={<Signup/>} />
+
 
 
     </Routes>    

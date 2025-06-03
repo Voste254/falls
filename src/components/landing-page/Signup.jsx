@@ -17,14 +17,24 @@ const Signup = () => {
           style={{ backgroundImage: `url(${imageUrl})` }}
         ></div>
         <div className="signup-form-section">
-          <h2>LOG IN</h2>
+          <h2>SIGN UP</h2>
           <form className="signup-form">
-
+            <div className="name-fields">
+              <input type="text" placeholder="First Name" required />
+              <input type="text" placeholder="Last Name" required />
+            </div>
             <input type="email" placeholder="Email" required />
+            <select required>
+              <option value="">Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+            <input type="text" placeholder="Country" required />
             <input type="password" placeholder="Password" required />
-            <Link >Forgot Password?</Link>
-            <Link to='/dashboard'><button type="submit">LOG IN</button></Link>
-            <Link to='/signup'><button type="submit">DONT HAVE AN ACCOUNT?</button></Link>
+            <input type="password" placeholder="Confirm Password" required />
+            <Link to='/dashboard'><button type="submit">Sign up</button></Link>
+             <Link to='/login'><button type="submit">Already have an account?</button></Link>
           </form>
         </div>
       </div>
