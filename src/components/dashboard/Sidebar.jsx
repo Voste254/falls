@@ -16,7 +16,7 @@ export default function Sidebar(){
   <p>V-Room</p>
 </button>
 
-<button>
+<button >
   <img src="https://i.ibb.co/XrSJCBqY/69c7572b985105af03266468412efe3122ea76ce.png" alt="Chats icon" />
   <p>Chats</p>
 </button>

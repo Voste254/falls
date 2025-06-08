@@ -9,13 +9,25 @@ import Services from './components/landing-page/Services';
 import { Route, Routes } from 'react-router-dom';
 import Login from './components/landing-page/Login';
 import Signup from './components/landing-page/Signup';
+import Body from './components/dashboard/Body';
+
+function Dbody() {
+  return (
+    <div style={{ display: 'flex', marginTop: '70px', height: 'calc(100vh - 70px)', overflow: 'hidden' }} >
+      <Sidebar />
+      <div style={{ flex: 1, overflowY: 'auto' }}>
+        <Body />
+      </div>
+    </div>
+  );
+}
 
 function Dashboard(){
   return(
-    <>
-      <Topbar/>
-      <Sidebar/>
-      </>
+   <>
+   <Topbar/>
+   <Dbody/>
+   </>
   );
 }
 function Landingpage(){
